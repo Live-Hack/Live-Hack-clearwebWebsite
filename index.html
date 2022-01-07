@@ -26,7 +26,7 @@
   <meta name="twitter:title" content="Live Hack">
   <meta name="twitter:description"
     content="Live Hack - a decentralized and community-based CTF platform based on the Blanche Neige network">
-  <meta name="twitter:image" content="https://live-hack.org/images/slider/slider02.jpg">
+  <meta name="twitter:image" content="https://live-hack.org/images/slider/slider01.gif">
 
   <!-- FAVICON FILES -->
   <link href="./images/icon05.png" rel="shortcut icon">
@@ -92,15 +92,13 @@
       </div>
     </div>
   </nav>
-  
-  
+
+
   <div class="bottombar">
     <div class="social-media">
       <ul data-splitting>
         <li><a href="https://github.com/Live-Hack/" target="_blank" rel="noreferrer">./git</a></li>
         <li><a href="https://blanche-neige.org" target="_blank">./Blanche-Neige</a></li>
-        <li><a href="https://cnil.me/docs/live-hack/" target="_blank" rel="noreferrer">./api</a></li>
-        <li><a href="#" target="_blank" rel="noreferrer">irc.live-hack.org</a></li>
       </ul>
     </div>
     <div class="audio"> <span>Blanche Neige Integration (Soon)</span>
@@ -110,8 +108,8 @@
       <div class="texts"> <b class="off" data-splitting>Off</b> <b class="on" data-splitting>On</b> </div>
     </div>
   </div>
-  
-  
+
+
   <header class="header">
     <div class="showcase-slider">
       <div class="swiper-wrapper">
@@ -123,29 +121,29 @@
             <div class="container"> <small data-splitting>CTF decentralized platform</small>
               <h1 data-splitting>Live<br>
                 <b>Hack</b></h1>
-              <div class="link"> <a href="https://www.npmjs.com/package/ctfclient"><b>+</b>
-                  <div class="words">
-                    <div class="first" data-splitting>Open the platform</div>
-                    <div class="second" data-splitting>NodeJs client</div>
-                  </div>
-                </a> </div>
+              <div class="link" onclick="open()"> <b>+</b>
+                <div class="words">
+                  <div class="first" data-splitting>Open the platform</div>
+                  <div class="second" data-splitting>Click on me !</div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
 
 
         <div class="swiper-slide">
-          <div class="slide-image bg-image" data-background="./images/slider/slider02.jpg"></div>
+          <div class="slide-image bg-image" data-background="./images/slider/slider02.png"></div>
           <div class="slide-inner">
             <div class="container"> <small data-splitting>CTF decentralized platform</small>
               <h1 data-splitting>Hack in<br>
                 <b>REAL</b> life</h1>
-              <div class="link"> <a href="#"><b>+</b>
+                <div class="link" onclick="open()"> <b>+</b>
                   <div class="words">
-                    <div class="first" data-splitting>Discover the targets</div>
-                    <div class="second" data-splitting>(Soon)</div>
+                    <div class="first" data-splitting>Open the platform</div>
+                    <div class="second" data-splitting>Click on me !</div>
                   </div>
-                </a> </div>
+                </div>
             </div>
           </div>
         </div>
@@ -185,6 +183,18 @@
   -->
 
   <!-- JS FILES -->
+
+  <script>
+    function open(){
+      //set new cookies
+      var d = new Date();
+      d.setTime(d.getTime() + (1 * 24 * 60 * 60 * 1000));
+      var expires = "expires=" + d.toUTCString();
+      document.cookie = "ope,=true;" + expires + ";path=/";
+      document.reload();
+    }
+  </script>
+
   <script src="./js/jquery.min.js"></script>
   <script src="./js/popper.min.js"></script>
   <script src="./js/bootstrap.min.js"></script>
