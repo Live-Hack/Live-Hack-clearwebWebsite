@@ -13,7 +13,7 @@
 
   <!-- SOCIAL MEDIA META -->
   <meta property="og:description"
-    content="Live Hack - a decentralized and community-based CTF platform based on the Blanche Neige network">
+    content="Live Hack - a decentralized and community-based CTF platform based network">
   <meta property="og:image" content="https://live-hack.org/images/slider/slider02.jpg">
   <meta property="og:site_name" content="Live Hack">
   <meta property="og:title" content="Live Hack">
@@ -25,11 +25,11 @@
   <meta name="twitter:creator" content="@_Aliiic3">
   <meta name="twitter:title" content="Live Hack">
   <meta name="twitter:description"
-    content="Live Hack - a decentralized and community-based CTF platform based on the Blanche Neige network">
+    content="Live Hack - a decentralized and community-based CTF platform based network">
   <meta name="twitter:image" content="https://live-hack.org/images/slider/slider01.gif">
 
   <!-- FAVICON FILES -->
-  <link href="./images/icon05.png" rel="shortcut icon">
+  <link href="./images/logo/skull.png" rel="shortcut icon">
 
   <!-- CSS FILES -->
   <link rel="stylesheet" href="./css/bundle.min.css">
@@ -42,7 +42,7 @@
   <div class="preloader">
     <div class="layers"> <span></span> <span></span> <span></span> </div>
     <div class="container-fluid">
-      <figure><img src="./images/logo/logo.gif" srcset="./images/logo/logo.gif" alt="Image"></figure>
+      <figure><img src="./images/logo/skull.png" srcset="./images/logo/skull.png" alt="Image"></figure>
       <small data-splitting>Loading Data</small>
       <div class="percentage">
         <div id="percentage"></div>
@@ -61,12 +61,12 @@
 
   <div class="menu-container">
     <ul class="main-menu">
-      <li><a href="#">HOME</a></li>
+      <li><a href="https://www.live-hack.org">Website</a></li>
     </ul>
   </div>
 
   <nav class="topbar">
-    <div class="logo"><a href="index.html"><img src="./images/logo/logo.gif" alt="Logo"></a></div>
+    <div class="logo"><a href="https://www.live-hack.org"><img src="./images/logo/skull.png" alt="Logo"></a></div>
     <div class="languages">
       <ul>
         <li><a href="#">en</a></li>
@@ -97,11 +97,10 @@
   <div class="bottombar">
     <div class="social-media">
       <ul data-splitting>
-        <li><a href="https://github.com/Live-Hack/" target="_blank" rel="noreferrer">./git</a></li>
-        <li><a href="https://blanche-neige.org" target="_blank">./Blanche-Neige</a></li>
+        <li><a href="https://github.com/Live-Hack/" target="_blank" rel="noreferrer">./Github</a></li>
       </ul>
     </div>
-    <div class="audio"> <span>Blanche Neige Integration (Soon)</span>
+    <div class="audio"> <span>Hacker vibes</span>
       <svg id="wave" viewBox="0 0 400 200" data-status="1">
         <polyline stroke="white" points=""></polyline>
       </svg>
@@ -121,11 +120,12 @@
             <div class="container"> <small data-splitting>CTF decentralized platform</small>
               <h1 data-splitting>Live<br>
                 <b>Hack</b></h1>
-              <div class="link" onclick="open()"> <b>+</b>
-                <div class="words">
-                  <div class="first" data-splitting>Open the platform</div>
-                  <div class="second" data-splitting>Click on me !</div>
-                </div>
+              <div class="link"> <a href="https://www.live-hack.org/"><b>+</b>
+                  <div class="words">
+                    <div class="first" data-splitting>Open the platform</div>
+                    <div class="second" data-splitting>Follow Alice</div>
+                  </div>
+                </a>
               </div>
             </div>
           </div>
@@ -138,12 +138,12 @@
             <div class="container"> <small data-splitting>CTF decentralized platform</small>
               <h1 data-splitting>Hack in<br>
                 <b>REAL</b> life</h1>
-                <div class="link" onclick="open()"> <b>+</b>
-                  <div class="words">
-                    <div class="first" data-splitting>Open the platform</div>
-                    <div class="second" data-splitting>Click on me !</div>
-                  </div>
+              <div class="link" onclick="open()"> <b>+</b>
+                <div class="words">
+                  <div class="first" data-splitting>Open the platform</div>
+                  <div class="second" data-splitting>Click on me !</div>
                 </div>
+              </div>
             </div>
           </div>
         </div>
@@ -185,7 +185,7 @@
   <!-- JS FILES -->
 
   <script>
-    function open(){
+    function open() {
       //set new cookies
       var d = new Date();
       d.setTime(d.getTime() + (1 * 24 * 60 * 60 * 1000));
